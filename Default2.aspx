@@ -6,17 +6,17 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        /* Set position of the image within its container */
+        
         .product-card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
             margin: auto;
             text-align: center;
             font-family: arial;
-            background-color: #fff; /* Add a white background */
-            border-radius: 5px; /* Add rounded corners */
-            padding: 20px; /* Add some padding */
-            margin-top: 650px; /* Adjust the top margin as needed */
+            background-color: #fff; 
+            border-radius: 5px; 
+            padding: 20px; 
+            margin-top: 650px; 
 
         }
         .price {
@@ -33,12 +33,12 @@
             cursor: pointer;
             width: 100%;
             font-size: 18px;
-            border-radius: 5px; /* Add rounded corners to the button */
+            border-radius: 5px; 
         }
         .product-card button:hover {
             opacity: 0.7;
         }
-        /* Additional styles for spacing and layout */
+        
         .product-container {
             display: flex;
             justify-content: space-around;
@@ -52,34 +52,34 @@
         
         #Image1 {
             position: absolute;
-            left: 50%; /* Position the top of the image at 50% of the container's width */
-            transform: translateX(-50%); /* Move the image up by half of its own width */
+            left: 50%; 
+            transform: translateX(-50%); 
         }
         #Image2 {
             position: absolute;
             top: 223px;
-            left: 0px; /* Position the top of the image at 50% of the container's width */
+            left: 0px; 
             width: 230px;
             height: 323px;
         }
        #Image3 {
             position: absolute;
             top: 223px;
-            right: 0px; /* Position the top of the image at 50% of the container's width */
+            right: 0px; 
             width: 198px;
             height: 323px;
         }
        #Image4 {
             position: absolute;
             top: 223px;
-            right: 744px; /* Position the top of the image at 50% of the container's width */
+            right: 744px;
             width: 534px;
             height: 323px;
         }
        #Image5 {
             position: absolute;
             top: 223px;
-            right: 199px; /* Position the top of the image at 50% of the container's width */
+            right: 199px; 
             width: 544px;
             height: 323px;
         }
@@ -89,10 +89,9 @@
             left: 49px;
             width: 320px;
             height: 30px;
-            background-color: white; /* Default background color */
-            /* Remove border */
-            padding: 5px; /* Padding */
-            color: #9999A0; /* Text color */
+            background-color: white;
+            padding: 5px; 
+            color: #9999A0; 
             border-bottom: 2px solid #F2EEE4;
             border-left-style: none;
             border-left-color: inherit;
@@ -105,99 +104,99 @@
             border-top-width: medium;
         }
         #TextBox1:hover {
-            background-color: #F2EEE4; /* Change background color on hover */
+            background-color: #F2EEE4; 
         }
         #Button1 {
             position: absolute;
-            top: 170px; /* Adjust top position as needed */
-            left: 509px; /* Adjust left position to align with TextBox */
+            top: 170px; 
+            left: 509px; 
             width: 106px;
         }
         #Button2 {
             position: absolute;
-            top: 170px; /* Adjust top position as needed */
-            left: 620px; /* Adjust left position to align with TextBox */
+            top: 170px; 
+            left: 620px; 
             width: 106px;
         }
         #Button3 {
             position: absolute;
-            top: 170px; /* Adjust top position as needed */
-            left: 745px; /* Adjust left position to align with TextBox */
+            top: 170px; 
+            left: 745px; 
             width: 106px;
         }
         #Button4 {
             position: absolute;
-            top: 169px; /* Adjust top position as needed */
-            left: 873px; /* Adjust left position to align with TextBox */
+            top: 169px; 
+            left: 873px; 
             width: 106px;
         }
         #Button5 {
             position: absolute;
-            top: 169px; /* Adjust top position as needed */
-            left: 976px; /* Adjust left position to align with TextBox */
+            top: 169px; 
+            left: 976px; 
             width: 106px;
         }
         #Button6 {
             position: absolute;
-            top: 155px; /* Adjust top position as needed */
-            left: 1200px; /* Adjust left position to align with TextBox */
+            top: 155px; 
+            left: 1200px; 
             height: 42px;
             width: 97px;
-            border: 2px solid #9999A0; /* Set border properties */
-            border-radius: 10px; /* Set border radius for rounded corners */
-            background-color: white; /* Set background color */
-            font-family: 'Showcard Gothic'; /* Set font family */
-            font-size: x-large; /* Set font size */
-            font-weight: normal; /* Set font weight */
-            color: #9999A0; /* Set text color */
+            border: 2px solid #9999A0; 
+            border-radius: 10px;
+            background-color: white; 
+            font-family: 'Showcard Gothic'; 
+            font-size: x-large; 
+            font-weight: normal;
+            color: #9999A0; 
         }
         #Button7 {
             position: absolute;
-            top: 155px; /* Adjust top position as needed */
-            left: 1300px; /* Adjust left position to align with TextBox */
+            top: 155px; 
+            left: 1300px; 
             height: 42px;
             width: 58px;
-            border: 2px solid #9999A0; /* Set border properties */
-            border-radius: 10px; /* Set border radius for rounded corners */
-            background-color: white; /* Set background color */
-            font-family: 'Showcard Gothic'; /* Set font family */
-            font-size: x-large; /* Set font size */
-            font-weight: normal; /* Set font weight */
-            color: #9999A0; /* Set text color */
+            border: 2px solid #9999A0; 
+            border-radius: 10px; 
+            background-color: white; 
+            font-family: 'Showcard Gothic'; 
+            font-size: x-large; 
+            font-weight: normal; 
+            color: #9999A0; 
         } 
         #Button1:hover {
-            color: #EA5455; /* Change text color on hover */
+            color: #EA5455; 
         }
         #Button2:hover {
-            color: #EA5455; /* Change text color on hover */
+            color: #EA5455; 
         }
         #Button3:hover {
-            color: #EA5455; /* Change text color on hover */
+            color: #EA5455; 
         }
         #Button4:hover {
-            color: #EA5455; /* Change text color on hover */
+            color: #EA5455;
         }
         #Button5:hover {
-            color: #EA5455; /* Change text color on hover */
+            color: #EA5455; 
         }
         
         #Label1 {
             position: absolute;
             top: 601px;
-            left: 58%; /* Position the top of the image at 50% of the container's width */
+            left: 58%; 
             transform: translateX(-50%);
             width: 1188px;
         }
         #Label2 {
             position: absolute;
             top: 1210px;
-            left: 50%; /* Position the top of the image at 50% of the container's width */
+            left: 50%; 
             transform: translateX(-50%);
         }
         #Label3 {
             position: absolute;
             top: 1180px;
-            left: 50%; /* Position the top of the image at 50% of the container's width */
+            left: 50%; 
             transform: translateX(-50%);
         }
 
