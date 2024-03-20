@@ -270,7 +270,6 @@
                     <p>Warm and Itch-Free</p>
                     <p><button>Add to Cart</button></p>
                 </div>
-                <!-- Add more product cards as needed -->
             </div>
 
         </asp:Panel>
